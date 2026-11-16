@@ -16,4 +16,240 @@ class Lyra_Settings {
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'menu' ) );
 		add_action( 'admin_init', array( $this, 'register' ) );
-		add_action( 'admin_post_lyra_build', array( $this, 'handle_aåÉ…}A…•}	Õ¥±‘•Èèé…ÍÍ¥¹}Ý½½}Á…” €‘Í±Õœ€¤ì($$‘µÍœ€€ô€‘½¬€ü}| €ÍÍ¥¹•…Ì]½½½µµ•É”Á…”¸œ°€±åÉ„µ½É”œ€¤€è}| €½Õ±¹½Ð…ÍÍ¥¸€¡‰Õ¥±Ñ¡”Á…”™¥ÉÍÐ¤¸œ°€±åÉ„µ½É”œ€¤ì($%±åÉ…}±½œ €‘Í±Õœ€¸€œè€œ€¸€‘µÍœ€¤ì(($%Í•Ñ}ÑÉ…¹Í¥•¹Ð ($$$±åÉ…}‰Õ¥±‘}É•ÍÕ±ÑÍ|œ€¸•Ñ}ÕÉÉ•¹Ñ}ÕÍ•É}¥ ¤°($$%…ÉÉ…ä ($$$$‘Í±Õœ€ôø…ÉÉ…ä ($$$$$½¬œ€€€€€€ôø€‘½¬°($$$$$¥œ€€€€€€ôø€À°($$$$$µ•ÍÍ…”œ€ôø€‘µÍœ°($$$$¤°($$$¤°($$$ØÀ($$¤ì($%ÝÁ}Í…™•}É•‘¥É•Ð …‘µ¥¹}ÕÉ° €…‘µ¥¸¹Á¡ÀýÁ…”ôœ€¸Í•±˜èéA€¤€¤ì($%•á¥Ðì(%ô(($¼¨¨($€¨•Á•¹‘•¹äÍÑ…ÑÕÌÉ½ÝÌ¸($€¨($€¨É•ÑÕÉ¸…ÉÉ…ä($€¨¼(%ÁÉ¥Ù…Ñ”™Õ¹Ñ¥½¸ÍÑ…ÑÕÍ}É½ÝÌ ¤ì($$‘½¹Ñ…¥¹•È€ô¹Õ±°ì($%¥˜€ ±…ÍÍ}•á¥ÍÑÌ €q±•µ•¹Ñ½ÉqA±Õ¥¸œ€¤€˜˜€„•µÁÑä q±•µ•¹Ñ½ÉqA±Õ¥¸èè‘¥¹ÍÑ…¹”´ù•áÁ•É¥µ•¹ÑÌ€¤€¤ì($$$‘½¹Ñ…¥¹•È€ôq±•µ•¹Ñ½ÉqA±Õ¥¸èè‘¥¹ÍÑ…¹”´ù•áÁ•É¥µ•¹ÑÌ´ù¥Í}™•…ÑÕÉ•}…Ñ¥Ù” €½¹Ñ…¥¹•Èœ€¤ì($%ô($%É•ÑÕÉ¸…ÉÉ…ä ($$%…ÉÉ…ä }| €±•µ•¹Ñ½Èœ°€±åÉ„µ½É”œ€¤°‘¥‘}…Ñ¥½¸ €•±•µ•¹Ñ½È½±½…‘•œ€¤€ü€½¬œ€è€µ¥ÍÍ¥¹œœ°‘•™¥¹• €159Q=I}YIM%=8œ€¤€ü159Q=I}YIM%=8€è€œœ€¤°($$%…ÉÉ…ä }| €±•µ•¹Ñ½ÈAÉ¼€¡Q¡•µ”	Õ¥±‘•È°1½½À°‘å¹…µ¥ŒÑ…Ì¤œ°€±åÉ„µ½É”œ€¤°‘•™¥¹• €159Q=I}AI=}YIM%=8œ€¤€ü€½¬œ€è€½ÁÑ¥½¹…°œ°‘•™¥¹• €159Q=I}AI=}YIM%=8œ€¤€ü159Q=I}AI=}YIM%=8€è€œœ€¤°($$%…ÉÉ…ä }| €±•á‰½à½¹Ñ…¥¹•È™•…ÑÕÉ”œ°€±åÉ„µ½É”œ€¤°ÑÉÕ”€ôôô€‘½¹Ñ…¥¹•È€ü€½¬œ€è€¡•¬œ°€œœ€¤°($$%…ÉÉ…ä }| €]½½½µµ•É”œ°€±åÉ„µ½É”œ€¤°±…ÍÍ}•á¥ÍÑÌ €]½½½µµ•É”œ€¤€ü€½¬œ€è€½ÁÑ¥½¹…°œ°‘•™¥¹• €]}YIM%=8œ€¤€ü]}YIM%=8€è€œœ€¤°($$%…ÉÉ…ä }| €A!@œ°€±åÉ„µ½É”œ€¤°€½¬œ°A!A}YIM%=8€¤°($$¤ì(%ô((%ÁÕ‰±¥Œ™Õ¹Ñ¥½¸É•¹‘•È ¤ì($%¥˜€ €„ÕÉÉ•¹Ñ}ÕÍ•É}…¸ €µ…¹…•}½ÁÑ¥½¹Ìœ€¤€¤ì($$%É•ÑÕÉ¸ì($%ô(($$‘É•¥Á•Ì€ô1åÉ…}A…•}	Õ¥±‘•ÈèéÉ•¥Á•Ì ¤ì($$‘­•ä€€€€€ô€±åÉ…}‰Õ¥±‘}É•ÍÕ±ÑÍ|œ€¸•Ñ}ÕÉÉ•¹Ñ}ÕÍ•É}¥ ¤ì($$‘É•ÍÕ±ÑÌ€ô•Ñ}ÑÉ…¹Í¥•¹Ð €‘­•ä€¤ì(($%•¡¼€œñ‘¥Ø±…ÍÌô‰ÝÉ…Àˆøñ Äøœ€¸•Í}¡Ñµ±}| €1åÉ„½É”œ°€±åÉ„µ½É”œ€¤€¸€œð½ Äøœì(($%¥˜€ ¥Í}…ÉÉ…ä €‘É•ÍÕ±ÑÌ€¤€¤ì($$%‘•±•Ñ•}ÑÉ…¹Í¥•¹Ð €‘­•ä€¤ì($$%™½É•… € €‘É•ÍÕ±ÑÌ…Ì€‘Í±Õœ€ôø€‘È€¤ì($$$%ÁÉ¥¹Ñ˜ ($$$$$œñ‘¥Ø±…ÍÌô‰¹½Ñ¥”€”Ä‘ÌˆøñÀøñÍÑÉ½¹œø”È‘Ìð½ÍÑÉ½¹œøè€”Ì‘Ìð½Àøð½‘¥Øøœ°($$$$$„•µÁÑä €‘Él½¬t€¤€ü€¹½Ñ¥”µÍÕ•ÍÌœ€è€¹½Ñ¥”µ•ÉÉ½Èœ°($$$$%•Í}¡Ñµ° €‘Í±Õœ€¤°($$$$%•Í}¡Ñµ° ¥ÍÍ•Ð €‘Élµ•ÍÍ…”t€¤€ü€‘Élµ•ÍÍ…”t€è€œœ€¤($$$$¤ì($$%ô($%ô(($%•¡¼€œñ Èøœ€¸•Í}¡Ñµ±}| €MÑ…ÑÕÌœ°€±åÉ„µ½É”œ€¤€¸€œð½ ÈøñÑ…‰±”±…ÍÌô‰Ý¥‘•™…ÐÍÑÉ¥Á•ˆÍÑå±”ô‰µ…àµÝ¥‘Ñ èÜÈÁÁàˆøñÑ‰½‘äøœì($%™½É•… € €‘Ñ¡¥Ì´ùÍÑ…ÑÕÍ}É½ÝÌ ¤…Ì€‘É½Ü€¤ì($$%ÁÉ¥¹Ñ˜ ($$$$œñÑÈøñÑø”Ä‘Ìð½ÑøñÑøñÍÑÉ½¹œø”È‘Ìð½ÍÑÉ½¹œøð½ÑøñÑø”Ì‘Ìð½Ñøð½ÑÈøœ°($$$%•Í}¡Ñµ° €‘É½ÝlÁt€¤°($$$%•Í}¡Ñµ° €‘É½ÝlÅt€¤°($$$%•Í}¡Ñµ° €‘É½ÝlÉt€¤($$$¤ì($%ô($%•¡¼€œð½Ñ‰½‘äøð½Ñ…‰±”øœì(($%•¡¼€œñ Èøœ€¸•Í}¡Ñµ±}| €A…•Ì…¹Ñ•µÁ±…Ñ•Ìœ°€±åÉ„µ½É”œ€¤€¸€œð½ Èøœì($%¥˜€ •µÁÑä €‘É•¥Á•Ì€¤€¤ì($$%•¡¼€œñÀøœ€¸•Í}¡Ñµ±}| €9¼É•¥Á•Ì™½Õ¹¥¸¥¹±Õ‘•Ì½É•¥Á•Ì¼¸œ°€±åÉ„µ½É”œ€¤€¸€œð½Àøœì($%ô•±Í”ì($$$üø($$$ñ™½É´µ•Ñ¡½ô‰Á½ÍÐˆ…Ñ¥½¸ôˆðýÁ¡À•¡¼•Í}ÕÉ° …‘µ¥¹}ÕÉ° €…‘µ¥¸µÁ½ÍÐ¹Á¡Àœ€¤€¤ì€üøˆø($$$$ñ¥¹ÁÕÐÑåÁ”ô‰¡¥‘‘•¸ˆ¹…µ”ô‰…Ñ¥½¸ˆÙ…±Õ”ô‰±åÉ…}‰Õ¥±ˆ€¼ø($$$$ðýÁ¡ÀÝÁ}¹½¹•}™¥•± €±åÉ…}‰Õ¥±œ€¤ì€üø($$$$ñÀø($$$$$ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰‰ÕÑÑ½¸‰ÕÑÑ½¸µÁÉ¥µ…Éäˆ¹…µ”ô‰Í±ÕœˆÙ…±Õ”ô‰…±°ˆøðýÁ¡À•Í}¡Ñµ±}” €	Õ¥±…±°œ°€±åÉ„µ½É”œ€¤ì€üøð½‰ÕÑÑ½¸ø($$$$$ñ±…‰•°ÍÑå±”ô‰µ…É¥¸µ¥¹±¥¹”µÍÑ…ÉÐèÄÉÁàˆøñ¥¹ÁÕÐÑåÁ”ô‰¡•­‰½àˆ¹…µ”ô‰™½É”ˆÙ…±Õ”ôˆÄˆ€¼ø€ðýÁ¡À•Í}¡Ñµ±}” €½É”½Ù•ÉÝÉ¥Ñ”µ…¹Õ…±±ä•‘¥Ñ•Á…•Ìœ°€±åÉ„µ½É”œ€¤ì€üøð½±…‰•°ø($$$$ð½Àø($$$$ñÑ…‰±”±…ÍÌô‰Ý¥‘•™…ÐÍÑÉ¥Á•ˆø($$$$$ñÑ¡•…øñÑÈø($$$$$$ñÑ øðýÁ¡À•Í}¡Ñµ±}” €I•¥Á”œ°€±åÉ„µ½É”œ€¤ì€üøð½Ñ ø($$$$$$ñÑ øðýÁ¡À•Í}¡Ñµ±}” €QåÁ”œ°€±åÉ„µ½É”œ€¤ì€üøð½Ñ ø($$$$$$ñÑ øðýÁ¡À•Í}¡Ñµ±}” €MÑ…Ñ”œ°€±åÉ„µ½É”œ€¤ì€üøð½Ñ ø($$$$$$ñÑ øðýÁ¡À•Í}¡Ñµ±}” €Ñ¥½¹Ìœ°€±åÉ„µ½É”œ€¤ì€üøð½Ñ ø($$$$$ð½ÑÈøð½Ñ¡•…ø($$$$$ñÑ‰½‘äø($$$$$ðýÁ¡À™½É•… € €‘É•¥Á•Ì…Ì€‘Í±Õœ€ôø€‘É•¥Á”€¤€è€üø($$$$$$ðýÁ¡À($$$$$$‘¥€€€€ô1åÉ…}A…•}	Õ¥±‘•Èèé™¥¹‘}Á…” €‘Í±Õœ€¤ì($$$$$$‘ÍÑ…Ñ”€ô}| €9½Ð‰Õ¥±Ðœ°€±åÉ„µ½É”œ€¤ì($$$$$%¥˜€ €‘¥€¤ì($$$$$$$‘ÍÑ…Ñ”€ô1åÉ…}A…•}	Õ¥±‘•ÈèéÝ…Í}•‘¥Ñ• €‘¥€¤€ü}| €‘¥Ñ•µ…¹Õ…±±äœ°€±åÉ„µ½É”œ€¤€è}| €	Õ¥±Ðœ°€±åÉ„µ½É”œ€¤ì($$$$$%ô($$$$$$‘­¥¹€ô€ ¥ÍÍ•Ð €‘É•¥Á•l­¥¹t€¤€˜˜€Ñ•µÁ±…Ñ”œ€ôôô€‘É•¥Á•l­¥¹t€¤€ü€ ¥ÍÍ•Ð €‘É•¥Á•lÑ•µÁ±…Ñ•}ÑåÁ”t€¤€ü€‘É•¥Á•lÑ•µÁ±…Ñ•}ÑåÁ”t€è€Ñ•µÁ±…Ñ”œ€¤€è€Á…”œì($$$$$$üø($$$$$$ñÑÈø($$$$$$$ñÑøñÍÑÉ½¹œøðýÁ¡À•¡¼•Í}¡Ñµ° ¥ÍÍ•Ð €‘É•¥Á•lÑ¥Ñ±”t€¤€ü€‘É•¥Á•lÑ¥Ñ±”t€è€‘Í±Õœ€¤ì€üøð½ÍÑÉ½¹œøñ‰È€¼øñ½‘”øðýÁ¡À•¡¼•Í}¡Ñµ° €‘Í±Õœ€¤ì€üøð½½‘”øð½Ñø($$$$$$$ñÑøðýÁ¡À•¡¼•Í}¡Ñµ° €‘­¥¹€¤ì€üøð½Ñø($$$$$$$ñÑøðýÁ¡À•¡¼•Í}¡Ñµ° €‘ÍÑ…Ñ”€¤ì€üøð½Ñø($$$$$$$ñÑø($$$$$$$$ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰‰ÕÑÑ½¸ˆ¹…µ”ô‰Í±ÕœˆÙ…±Õ”ôˆðýÁ¡À•¡¼•Í}…ÑÑÈ €‘Í±Õœ€¤ì€üøˆøðýÁ¡À•¡¼€‘¥€ü•Í}¡Ñµ±}| €I•‰Õ¥±œ°€±åÉ„µ½É”œ€¤€è•Í}¡Ñµ±}| €	Õ¥±œ°€±åÉ„µ½É”œ€¤ì€üøð½‰ÕÑÑ½¸ø($$$$$$$$ðýÁ¡À¥˜€ €‘¥€¤€è€üø($$$$$$$$$ñ„±…ÍÌô‰‰ÕÑÑ½¸ˆ¡É•˜ôˆðýÁ¡À•¡¼•Í}ÕÉ° …‘µ¥¹}ÕÉ° €Á½ÍÐ¹Á¡ÀýÁ½ÍÐôœ€¸€¡¥¹Ð¤€‘¥€¸€œ™…Ñ¥½¸õ•±•µ•¹Ñ½Èœ€¤€¤ì€üøˆøðýÁ¡À•Í}¡Ñµ±}” €‘¥ÐÝ¥Ñ ±•µ•¹Ñ½Èœ°€±åÉ„µ½É”œ€¤ì€üøð½„ø($$$$$$$$ðýÁ¡À•¹‘¥˜ì€üø($$$$$$$ð½Ñø($$$$$$ð½ÑÈø($$$$$ðýÁ¡À•¹‘™½É•… ì€üø($$$$$ð½Ñ‰½‘äø($$$$ð½Ñ…‰±”ø($$$ð½™½É´ø($$$ðýÁ¡À(($$$‘Ý½½}É•¥Á•Ì€ô…ÉÉ…ä ¤ì($$%™½É•… € €‘É•¥Á•Ì…Ì€‘Í±Õœ€ôø€‘É•¥Á”€¤ì($$$%¥˜€ €„•µÁÑä €‘É•¥Á•lÝ½½}Á…”t€¤€¤ì($$$$$‘Ý½½}É•¥Á•Íl€‘Í±Õœt€ô€‘É•¥Á”ì($$$%ô($$%ô($$%¥˜€ €‘Ý½½}É•¥Á•Ì€˜˜1åÉ…}]½¼èé¥Í}…Ñ¥Ù” ¤€¤ì($$$%•¡¼€œñ Ìøœ€¸•Í}¡Ñµ±}| €]½½½µµ•É”Á…•Ìœ°€±åÉ„µ½É”œ€¤€¸€œð½ Ìøœì($$$%•¡¼€œñÀøœ€¸•Í}¡Ñµ±}| €ÍÍ¥¹¥¹œÉ•Á±…•ÌÑ¡”Á…”]½½½µµ•É”ÕÉÉ•¹Ñ±äÕÍ•Ì™½È…ÉÐ½¡•­½ÕÐ¸œ°€±åÉ„µ½É”œ€¤€¸€œð½Àøœì($$$%™½É•… € €‘Ý½½}É•¥Á•Ì…Ì€‘Í±Õœ€ôø€‘É•¥Á”€¤ì($$$$$üø($$$$$ñ™½É´µ•Ñ¡½ô‰Á½ÍÐˆ…Ñ¥½¸ôˆðýÁ¡À•¡¼•Í}ÕÉ° …‘µ¥¹}ÕÉ° €…‘µ¥¸µÁ½ÍÐ¹Á¡Àœ€¤€¤ì€üøˆÍÑå±”ô‰‘¥ÍÁ±…äé¥¹±¥¹”µ‰±½¬íµ…É¥¸µ¥¹±¥¹”µ•¹èáÁàˆø($$$$$$ñ¥¹ÁÕÐÑåÁ”ô‰¡¥‘‘•¸ˆ¹…µ”ô‰…Ñ¥½¸ˆÙ…±Õ”ô‰±åÉ…}…ÍÍ¥¹}Ý½¼ˆ€¼ø($$$$$$ñ¥¹ÁÕÐÑåÁ”ô‰¡¥‘‘•¸ˆ¹…µ”ô‰Í±ÕœˆÙ…±Õ”ôˆðýÁ¡À•¡¼•Í}…ÑÑÈ €‘Í±Õœ€¤ì€üøˆ€¼ø($$$$$$ðýÁ¡ÀÝÁ}¹½¹•}™¥•± €±åÉ…}…ÍÍ¥¹}Ý½¼œ€¤ì€üø($$$$$$ñ‰ÕÑÑ½¸ÑåÁ”ô‰ÍÕ‰µ¥Ðˆ±…ÍÌô‰‰ÕÑÑ½¸ˆøðýÁ¡À•¡¼•Í}¡Ñµ° ÍÁÉ¥¹Ñ˜ €¼¨ÑÉ…¹Í±…Ñ½ÉÌè€•ÌèÝ½¼Á…”ÑåÁ”€¨¼}| €ÍÍ¥¸…Ì]½½½µµ•É”€•ÌÁ…”œ°€±åÉ„µ½É”œ€¤°€‘É•¥Á•lÝ½½}Á…”t€¤€¤ì€üøð½‰ÕÑÑ½¸ø($$$$$ð½™½É´ø($$$$$ðýÁ¡À($$$%ô($$%ô($%ô(($$üø($$ñ ÈøðýÁ¡À•Í}¡Ñµ±}” €=ÁÑ¥½¹Ìœ°€±åÉ„µ½É”œ€¤ì€üøð½ Èø($$ñ™½É´µ•Ñ¡½ô‰Á½ÍÐˆ…Ñ¥½¸ô‰½ÁÑ¥½¹Ì¹Á¡Àˆø($$$ðýÁ¡ÀÍ•ÑÑ¥¹Í}™¥•±‘Ì €±åÉ…}½É”œ€¤ì€üø($$$ñÀøñ±…‰•°øñ¥¹ÁÕÐÑåÁ”ô‰¡•­‰½àˆ¹…µ”ô‰±åÉ…}Í•ÑÑ¥¹ÍmÁ•ÉÍ¥…¹}‘¥¥ÑÍtˆÙ…±Õ”ôˆÄˆ€ðýÁ¡À¡•­• €Ä°€¡¥¹Ð¤±åÉ…}½ÁÑ¥½¸ €Á•ÉÍ¥…¹}‘¥¥ÑÌœ°€À€¤€¤ì€üø€¼ø€ðýÁ¡À•Í}¡Ñµ±}” €M¡½ÜA•ÉÍ¥…¸‘¥¥ÑÌ€¡±åÉ…}‘¥¥ÑÌ¡•±Á•È¤œ°€±åÉ„µ½É”œ€¤ì€üøð½±…‰•°øð½Àø($$$ñÀøñ±…‰•°øñ¥¹ÁÕÐÑåÁ”ô‰¡•­‰½àˆ¹…µ”ô‰±åÉ…}Í•ÑÑ¥¹Ím‘•±•Ñ•}½¹}Õ¹¥¹ÍÑ…±±tˆÙ…±Õ”ôˆÄˆ€ðýÁ¡À¡•­• €Ä°€¡¥¹Ð¤±åÉ…}½ÁÑ¥½¸ €‘•±•Ñ•}½¹}Õ¹¥¹ÍÑ…±°œ°€À€¤€¤ì€üø€¼ø€ðýÁ¡À•Í}¡Ñµ±}” €•±•Ñ”•¹•É…Ñ•Á…•Ì½Ñ•µÁ±…Ñ•ÌÝ¡•¸Ñ¡”Á±Õ¥¸¥ÌÕ¹¥¹ÍÑ…±±•œ°€±åÉ„µ½É”œ€¤ì€üøð½±…‰•°øð½Àø($$$ðýÁ¡ÀÍÕ‰µ¥Ñ}‰ÕÑÑ½¸ ¤ì€üø($$ð½™½É´ø(($$ñ ÈøðýÁ¡À•Í}¡Ñµ±}” €1½œœ°€±åÉ„µ½É”œ€¤ì€üøð½ Èø($$ðýÁ¡À($$‘±½œ€ô±åÉ…}•Ñ}±½œ ¤ì($%¥˜€ •µÁÑä €‘±½œ€¤€¤ì($$%•¡¼€œñÀøœ€¸•Í}¡Ñµ±}| €9½Ñ¡¥¹œ±½•å•Ð¸œ°€±åÉ„µ½É”œ€¤€¸€œð½Àøœì($%ô•±Í”ì($$%•¡¼€œñÑ…‰±”±…ÍÌô‰Ý¥‘•™…ÐÍÑÉ¥Á•ˆÍÑå±”ô‰µ…àµÝ¥‘Ñ èäÀÁÁàˆøñÑ‰½‘äøœì($$%™½É•… € …ÉÉ…å}Í±¥” €‘±½œ°€À°€ÈÀ€¤…Ì€‘±¥¹”€¤ì($$$%ÁÉ¥¹Ñ˜ ($$$$$œñÑÈøñÑÍÑå±”ô‰Ý¥‘Ñ èÄØÁÁàˆø”Ä‘Ìð½ÑøñÑø”È‘Ìð½Ñøð½ÑÈøœ°($$$$%•Í}¡Ñµ° ¥ÍÍ•Ð €‘±¥¹•lÑ¥µ”t€¤€ü€‘±¥¹•lÑ¥µ”t€è€œœ€¤°($$$$%•Í}¡Ñµ° ¥ÍÍ•Ð €‘±¥¹•lµ•ÍÍ…”t€¤€ü€‘±¥¹•lµ•ÍÍ…”t€è€œœ€¤($$$$¤ì($$%ô($$%•¡¼€œð½Ñ‰½‘äøð½Ñ…‰±”øœì($%ô($%•¡¼€œð½‘¥Øøœì(%ô)ô(
+		add_action( 'admin_post_lyra_build', array( $this, 'handle_build' ) );
+		add_action( 'admin_post_lyra_assign_woo', array( $this, 'handle_assign_woo' ) );
+	}
+
+	public function menu() {
+		add_menu_page(
+			__( 'Lyra Core', 'lyra-core' ),
+			__( 'Lyra Core', 'lyra-core' ),
+			'manage_options',
+			self::PAGE,
+			array( $this, 'render' ),
+			'dashicons-layout',
+			58
+		);
+	}
+
+	public function register() {
+		register_setting(
+			'lyra_core',
+			'lyra_settings',
+			array(
+				'type'              => 'array',
+				'sanitize_callback' => array( $this, 'sanitize' ),
+				'default'           => array(),
+			)
+		);
+	}
+
+	/**
+	 * Sanitize options.
+	 *
+	 * @param mixed $input Raw input.
+	 * @return array
+	 */
+	public function sanitize( $input ) {
+		$input = is_array( $input ) ? $input : array();
+		return array(
+			'delete_on_uninstall' => empty( $input['delete_on_uninstall'] ) ? 0 : 1,
+			'persian_digits'      => empty( $input['persian_digits'] ) ? 0 : 1,
+		);
+	}
+
+	public function handle_build() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Not allowed.', 'lyra-core' ) );
+		}
+		check_admin_referer( 'lyra_build' );
+
+		$slug  = isset( $_POST['slug'] ) ? sanitize_key( wp_unslash( $_POST['slug'] ) ) : '';
+		$force = ! empty( $_POST['force'] );
+
+		if ( 'all' === $slug ) {
+			$results = Lyra_Page_Builder::build_all( $force );
+		} else {
+			$results = array( $slug => Lyra_Page_Builder::build( $slug, $force ) );
+		}
+
+		set_transient( 'lyra_build_results_' . get_current_user_id(), $results, 60 );
+		wp_safe_redirect( admin_url( 'admin.php?page=' . self::PAGE ) );
+		exit;
+	}
+
+	public function handle_assign_woo() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Not allowed.', 'lyra-core' ) );
+		}
+		check_admin_referer( 'lyra_assign_woo' );
+
+		$slug = isset( $_POST['slug'] ) ? sanitize_key( wp_unslash( $_POST['slug'] ) ) : '';
+		$ok   = Lyra_Page_Builder::assign_woo_page( $slug );
+		$msg  = $ok ? __( 'Assigned as WooCommerce page.', 'lyra-core' ) : __( 'Could not assign (build the page first).', 'lyra-core' );
+		lyra_log( $slug . ': ' . $msg );
+
+		set_transient(
+			'lyra_build_results_' . get_current_user_id(),
+			array(
+				$slug => array(
+					'ok'      => $ok,
+					'id'      => 0,
+					'message' => $msg,
+				),
+			),
+			60
+		);
+		wp_safe_redirect( admin_url( 'admin.php?page=' . self::PAGE ) );
+		exit;
+	}
+
+	/**
+	 * Dependency status rows.
+	 *
+	 * @return array
+	 */
+	private function status_rows() {
+		$container = null;
+		if ( class_exists( '\Elementor\Plugin' ) && ! empty( \Elementor\Plugin::$instance->experiments ) ) {
+			$container = \Elementor\Plugin::$instance->experiments->is_feature_active( 'container' );
+		}
+		return array(
+			array( __( 'Elementor', 'lyra-core' ), did_action( 'elementor/loaded' ) ? 'ok' : 'missing', defined( 'ELEMENTOR_VERSION' ) ? ELEMENTOR_VERSION : '' ),
+			array( __( 'Elementor Pro (Theme Builder, Loop, dynamic tags)', 'lyra-core' ), defined( 'ELEMENTOR_PRO_VERSION' ) ? 'ok' : 'optional', defined( 'ELEMENTOR_PRO_VERSION' ) ? ELEMENTOR_PRO_VERSION : '' ),
+			array( __( 'Flexbox Container feature', 'lyra-core' ), true === $container ? 'ok' : 'check', '' ),
+			array( __( 'WooCommerce', 'lyra-core' ), class_exists( 'WooCommerce' ) ? 'ok' : 'optional', defined( 'WC_VERSION' ) ? WC_VERSION : '' ),
+			array( __( 'PHP', 'lyra-core' ), 'ok', PHP_VERSION ),
+		);
+	}
+
+	public function render() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+		$recipes = Lyra_Page_Builder::recipes();
+		$key     = 'lyra_build_results_' . get_current_user_id();
+		$results = get_transient( $key );
+
+		echo '<div class="wrap"><h1>' . esc_html__( 'Lyra Core', 'lyra-core' ) . '</h1>';
+
+		if ( is_array( $results ) ) {
+			delete_transient( $key );
+			foreach ( $results as $slug => $r ) {
+				printf(
+					'<div class="notice %1$s"><p><strong>%2$s</strong>: %3$s</p></div>',
+					! empty( $r['ok'] ) ? 'notice-success' : 'notice-error',
+					esc_html( $slug ),
+					esc_html( isset( $r['message'] ) ? $r['message'] : '' )
+				);
+			}
+		}
+
+		echo '<h2>' . esc_html__( 'Status', 'lyra-core' ) . '</h2><table class="widefat striped" style="max-width:720px"><tbody>';
+		foreach ( $this->status_rows() as $row ) {
+			printf(
+				'<tr><td>%1$s</td><td><strong>%2$s</strong></td><td>%3$s</td></tr>',
+				esc_html( $row[0] ),
+				esc_html( $row[1] ),
+				esc_html( $row[2] )
+			);
+		}
+		echo '</tbody></table>';
+
+		echo '<h2>' . esc_html__( 'Pages and templates', 'lyra-core' ) . '</h2>';
+		if ( empty( $recipes ) ) {
+			echo '<p>' . esc_html__( 'No recipes found in includes/recipes/.', 'lyra-core' ) . '</p>';
+		} else {
+			?>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<input type="hidden" name="action" value="lyra_build" />
+				<?php wp_nonce_field( 'lyra_build' ); ?>
+				<p>
+					<button type="submit" class="button button-primary" name="slug" value="all"><?php esc_html_e( 'Build all', 'lyra-core' ); ?></button>
+					<label style="margin-inline-start:12px"><input type="checkbox" name="force" value="1" /> <?php esc_html_e( 'Force overwrite manually edited pages', 'lyra-core' ); ?></label>
+				</p>
+				<table class="widefat striped">
+					<thead><tr>
+						<th><?php esc_html_e( 'Recipe', 'lyra-core' ); ?></th>
+						<th><?php esc_html_e( 'Type', 'lyra-core' ); ?></th>
+						<th><?php esc_html_e( 'State', 'lyra-core' ); ?></th>
+						<th><?php esc_html_e( 'Actions', 'lyra-core' ); ?></th>
+					</tr></thead>
+					<tbody>
+					<?php foreach ( $recipes as $slug => $recipe ) : ?>
+						<?php
+						$id    = Lyra_Page_Builder::find_page( $slug );
+						$state = __( 'Not built', 'lyra-core' );
+						if ( $id ) {
+							$state = Lyra_Page_Builder::was_edited( $id ) ? __( 'Edited manually', 'lyra-core' ) : __( 'Built', 'lyra-core' );
+						}
+						$kind = ( isset( $recipe['kind'] ) && 'template' === $recipe['kind'] ) ? ( isset( $recipe['template_type'] ) ? $recipe['template_type'] : 'template' ) : 'page';
+						?>
+						<tr>
+							<td><strong><?php echo esc_html( isset( $recipe['title'] ) ? $recipe['title'] : $slug ); ?></strong><br /><code><?php echo esc_html( $slug ); ?></code></td>
+							<td><?php echo esc_html( $kind ); ?></td>
+							<td><?php echo esc_html( $state ); ?></td>
+							<td>
+								<button type="submit" class="button" name="slug" value="<?php echo esc_attr( $slug ); ?>"><?php echo $id ? esc_html__( 'Rebuild', 'lyra-core' ) : esc_html__( 'Build', 'lyra-core' ); ?></button>
+								<?php if ( $id ) : ?>
+									<a class="button" href="<?php echo esc_url( admin_url( 'post.php?post=' . (int) $id . '&action=elementor' ) ); ?>"><?php esc_html_e( 'Edit with Elementor', 'lyra-core' ); ?></a>
+								<?php endif; ?>
+							</td>
+						</tr>
+					<?php endforeach; ?>
+					</tbody>
+				</table>
+			</form>
+			<?php
+
+			$woo_recipes = array();
+			foreach ( $recipes as $slug => $recipe ) {
+				if ( ! empty( $recipe['woo_page'] ) ) {
+					$woo_recipes[ $slug ] = $recipe;
+				}
+			}
+			if ( $woo_recipes && Lyra_Woo::is_active() ) {
+				echo '<h3>' . esc_html__( 'WooCommerce pages', 'lyra-core' ) . '</h3>';
+				echo '<p>' . esc_html__( 'Assigning replaces the page WooCommerce currently uses for cart/checkout.', 'lyra-core' ) . '</p>';
+				foreach ( $woo_recipes as $slug => $recipe ) {
+					?>
+					<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>" style="display:inline-block;margin-inline-end:8px">
+						<input type="hidden" name="action" value="lyra_assign_woo" />
+						<input type="hidden" name="slug" value="<?php echo esc_attr( $slug ); ?>" />
+						<?php wp_nonce_field( 'lyra_assign_woo' ); ?>
+						<button type="submit" class="button"><?php echo esc_html( sprintf( /* translators: %s: woo page type */ __( 'Assign as WooCommerce %s page', 'lyra-core' ), $recipe['woo_page'] ) ); ?></button>
+					</form>
+					<?php
+				}
+			}
+		}
+
+		?>
+		<h2><?php esc_html_e( 'Options', 'lyra-core' ); ?></h2>
+		<form method="post" action="options.php">
+			<?php settings_fields( 'lyra_core' ); ?>
+			<p><label><input type="checkbox" name="lyra_settings[persian_digits]" value="1" <?php checked( 1, (int) lyra_option( 'persian_digits', 0 ) ); ?> /> <?php esc_html_e( 'Show Persian digits (lyra_digits helper)', 'lyra-core' ); ?></label></p>
+			<p><label><input type="checkbox" name="lyra_settings[delete_on_uninstall]" value="1" <?php checked( 1, (int) lyra_option( 'delete_on_uninstall', 0 ) ); ?> /> <?php esc_html_e( 'Delete generated pages/templates when the plugin is uninstalled', 'lyra-core' ); ?></label></p>
+			<?php submit_button(); ?>
+		</form>
+
+		<h2><?php esc_html_e( 'Log', 'lyra-core' ); ?></h2>
+		<?php
+		$log = lyra_get_log();
+		if ( empty( $log ) ) {
+			echo '<p>' . esc_html__( 'Nothing logged yet.', 'lyra-core' ) . '</p>';
+		} else {
+			echo '<table class="widefat striped" style="max-width:900px"><tbody>';
+			foreach ( array_slice( $log, 0, 20 ) as $line ) {
+				printf(
+					'<tr><td style="width:160px">%1$s</td><td>%2$s</td></tr>',
+					esc_html( isset( $line['time'] ) ? $line['time'] : '' ),
+					esc_html( isset( $line['message'] ) ? $line['message'] : '' )
+				);
+			}
+			echo '</tbody></table>';
+		}
+		echo '</div>';
+	}
+}
