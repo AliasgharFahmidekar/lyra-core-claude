@@ -1,0 +1,90 @@
+name: Complete initial source import
+
+on:
+  push:
+    branches:
+      - import/initial-source
+    paths:
+      - .import/remaining.tar.gz
+
+permissions:
+  contents: write
+
+jobs:
+  extract-and-commit:
+    if: ${{ !contains(github.event.head_commit.message, '[expanded]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out import branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract the remaining original files
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import tarfile
+
+          expected = {
+              "lyra-core/includes/class-lyra-page-builder.php",
+              "lyra-core/includes/recipes/index.php",
+              "lyra-core/includes/recipes/example-landing.php",
+              "README.md",
+              "CLAUDE.md",
+              "docs/ARCHITECTURE.md",
+              "docs/WORKFLOW.md",
+              "docs/MAPPING-TEMPLATE.md",
+              ".claude/skills/html-to-elementor-section/SKILL.md",
+              ".claude/skills/design-tokens-and-css/SKILL.md",
+              ".claude/skills/plugin-qa-and-delivery/SKILL.md",
+              ".claude/skills/woocommerce-elementor-pages/SKILL.md",
+              ".claude/skills/elementor-page-recipes/SKILL.md",
+              ".claude/skills/elementor-widget-builder/SKILL.md",
+              ".claude/skills/elementor-dynamic-content/SKILL.md",
+              ".claude/commands/new-widget.md",
+              ".claude/commands/qa.md",
+              ".claude/commands/build-section.md",
+              "AGENTS.md",
+              ".gitignore",
+              "designs/README.md",
+              "designs/.gitkeep",
+              "designs/_example/notes.md",
+          }
+          archive = Path(".import/remaining.tar.gz")
+          with tarfile.open(archive, "r:gz") as package:
+              members = package.getmembers()
+              names = {member.name for member in members}
+              if names != expected or len(members) != 23:
+                  raise SystemExit(f"Archive manifest mismatch: expected 23 files, found {len(members)}")
+              for member in members:
+                  path = Path(member.name)
+                  if not member.isfile() or path.is_absolute() or ".." in path.parts:
+                      raise SystemExit(f"Unsafe archive member: {member.name}")
+                  target = Path(".") / path
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  source = package.extractfile(member)
+                  if source is None:
+                      raise SystemExit(f"Cannot read: {member.name}")
+                  target.write_bytes(source.read())
+          archive.unlink()
+          Path(".import").rmdir()
+          Path(".github/workflows/import-source.yml").unlink()
+          PY
+
+      - name: Verify the complete source tree and create the final commit
+        shell: bash
+        run: |
+          git add -A
+          file_count=$(git ls-files | wc -l | tr -d ' ')
+          test "$file_count" = "49"
+          test -f lyra-core/includes/class-lyra-page-builder.php
+          test -f README.md
+          test -f CLAUDE.md
+          test -f AGENTS.md
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import all Lyra Core source files [expanded]"
+          git push origin "$GITHUB_REF_NAME"
