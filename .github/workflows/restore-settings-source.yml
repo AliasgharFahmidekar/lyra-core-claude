@@ -1,0 +1,32 @@
+name: Restore settings file from original archive
+on:
+  push:
+    branches:
+      - fix/restore-settings-source
+    paths:
+      - .import/class-lyra-settings.php.gz
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/restore-settings-source
+      - name: Restore and verify exact source
+        run: |
+          set -euo pipefail
+          archive='.import/class-lyra-settings.php.gz'
+          target='lyra-core/includes/class-lyra-settings.php'
+          test -f "$archive"
+          gzip -t "$archive"
+          gzip -dc "$archive" > "$target"
+          test "$(wc -c < "$target" | tr -d ' ')" = '9532'
+          test "$(git hash-object "$target")" = 'c5b4fce245b706b9de372b86b2abb28705a7f133'
+          rm "$archive"
+          rmdir .import
+          rm .github/workflows/restore-settings-source.yml
+          git add -A
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Restore original settings file from source archive'
+          git push origin HEAD:fix/restore-settings-source
